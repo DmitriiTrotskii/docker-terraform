@@ -28,7 +28,7 @@ Could not retrieve the list of available versions for provider integrations/gith
 | [Gitlab](https://github.com/gitlabhq/terraform-provider-gitlab)                 | v3.15.1  | 24M  |
 | [YandexCloud](https://github.com/yandex-cloud/terraform-provider-yandex)        | v0.75.0  | 63M  |
 | [DigitalOcean](https://github.com/digitalocean/terraform-provider-digitalocean) | v2.21.0  | 27M  |
-| [AWS](https://github.com/hashicorp/terraform-provider-aws/)                     | v.4.20.1 | 337M |
+| [AWS](https://github.com/hashicorp/terraform-provider-aws/)                     | v4.21.0  | 337M |
 | [Local](https://github.com/hashicorp/terraform-provider-local/)                 | v.2.2.3  | 19M  |
 | [Random](https://github.com/hashicorp/terraform-provider-random/)               | v3.3.2   | 19M  |
 
@@ -51,7 +51,7 @@ ARG TF_GITHUB_VER=4.26.1
 ARG TF_GITLAB_VER=3.15.1
 ARG TF_YC_VER=0.75.0
 ARG TF_DO_VER=2.21.0
-ARG TF_AWS_VER=4.20.1
+ARG TF_AWS_VER=4.21.0
 ARG TF_LOCAL_VER=2.2.3
 ARG TF_RANDOM_VER=3.3.2
 ```
