@@ -13,11 +13,11 @@ Error: Failed to query available provider packages
 Could not retrieve the list of available versions for provider integrations/github: could not connect to registry.terraform.io: Failed to request discovery document: 403 Forbidden
 ```
 
-Доступ к исходникам на github не блокируется. Данный образ собирает из исходников сам модуль terraform и некоторые провайдеры для него.
+Можно собрать как terraform так и провайдеров для него из исходников на github. Данный образ именно это иделает - собирает из исходников сам модуль terraform и некоторые провайдеры для него.
 
 Все пути провайдеров сохраняются, так что для их использования достаточно добавить ```local/``` при указании провайдера.
 
-Со всем провайдерами обаз получается довольно большой, около 1GB.
+Со всем провайдерами образ получается довольно большой, около 1GB.
 
 ---
 
