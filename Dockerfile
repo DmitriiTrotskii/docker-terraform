@@ -65,7 +65,7 @@ ARG TF_LOCAL
 ARG TF_LOCAL_VER
 ARG TF_LOCAL_SRC=https://github.com/hashicorp/${TF_LOCAL}/archive/refs/tags/v${TF_LOCAL_VER}.zip
 
-#   https://github.com/hashicorp/terraform-provider-random/archive/refs/tags/v3.3.2.zip
+#   https://github.com/hashicorp/terraform-provider-random/
 ARG TF_RANDOM
 ARG TF_RANDOM_VER
 ARG TF_RANDOM_SRC=https://github.com/hashicorp/${TF_RANDOM}/archive/refs/tags/v${TF_RANDOM_VER}.zip
