@@ -28,7 +28,7 @@ FROM golang:latest as builder
 
 #   https://github.com/hashicorp/terraform/
 ARG TF_VERSION
-ARG TF_SRC="https://github.com/hashicorp/terraform/archive/refs/tags/v${TF_VERSION}.zip"
+ARG TF_SRC=https://github.com/hashicorp/terraform/archive/refs/tags/v${TF_VERSION}.zip
 
 #   https://github.com/hashicorp/terraform-provider-vsphere/
 ARG TF_VSPHERE
@@ -161,7 +161,6 @@ COPY --from=builder /tmp/bin/${TF_LOCAL}_${TF_LOCAL_VER} ${TF_PLUGINS_DIR}/hashi
 COPY --from=builder /tmp/bin/${TF_RANDOM}_${TF_RANDOM_VER} ${TF_PLUGINS_DIR}/hashicorp/random/${TF_RANDOM_VER}/${ARCH}/
 
 RUN apt update && \
-    apt upgrade -y && \
     apt install -y git tree vim mc && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
