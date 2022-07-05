@@ -170,3 +170,4 @@ WORKDIR /terraform
 RUN ln -s ${TF_PLUGINS_DIR} /terraform/plugins
 
 ENTRYPOINT [ "bash" ]
+
