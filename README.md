@@ -17,7 +17,7 @@ Could not retrieve the list of available versions for provider integrations/gith
 
 Все пути провайдеров сохраняются, так что для их использования достаточно добавить ```local/``` при указании провайдера.
 
-Со всем провайдерами образ получается довольно большой, около 1GB.
+Со всеми провайдерами образ получается довольно большой, около 1GB.
 
 ---
 
@@ -45,15 +45,15 @@ git clone https://github.com/DmitriiTrotskii/docker-terraform.git && cd docker-t
 2.  Изменить версии на актуальные / удалить не нужные провайдеры
 
 ```Dockerfile
-ARG TF_VERSION=1.2.4
-ARG TF_VSPHERE_VER=2.2.0
-ARG TF_GITHUB_VER=4.26.1
-ARG TF_GITLAB_VER=3.15.1
-ARG TF_YC_VER=0.76.0
-ARG TF_DO_VER=2.21.0
-ARG TF_AWS_VER=4.21.0
-ARG TF_LOCAL_VER=2.2.3
-ARG TF_RANDOM_VER=3.3.2
+ARG TF_VERSION=x.x.x
+ARG TF_VSPHERE_VER=x.x.x
+ARG TF_GITHUB_VER=x.x.x
+ARG TF_GITLAB_VER=x.x.x
+ARG TF_YC_VER=x.x.x
+ARG TF_DO_VER=x.x.x
+ARG TF_AWS_VER=x.x.x
+ARG TF_LOCAL_VER=x.x.x
+ARG TF_RANDOM_VER=x.x.x
 ```
 
 Удалить проще всего из итогового образа, провайдер все равно будет компилироваться но в итоговый образ не попадет, что уменьшит его вес
