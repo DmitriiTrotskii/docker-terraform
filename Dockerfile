@@ -1,7 +1,7 @@
 ############################################
 #   Global ARGs ############################
 ##  Versions    ############################
-ARG TF_VERSION=1.2.3
+ARG TF_VERSION=1.2.4
 #
 ARG TF_VSPHERE_VER=2.2.0
 ARG TF_GITHUB_VER=4.26.1

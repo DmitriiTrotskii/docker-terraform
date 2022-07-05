@@ -21,7 +21,7 @@ Could not retrieve the list of available versions for provider integrations/gith
 
 ---
 
-| [Terraform](https://github.com/hashicorp/terraform/)                            | v1.2.3   | 84M  |
+| [Terraform](https://github.com/hashicorp/terraform/)                            | v1.2.4   | 84M  |
 | :------------------------------------------------------------------------------ | :------: | ---: |
 | [vSphere](https://github.com/hashicorp/terraform-provider-vsphere/)             | v2.2.0   | 36M  |
 | [Github](https://github.com/integrations/terraform-provider-github/)            | v4.26.1  | 26M  |
@@ -45,7 +45,7 @@ git clone https://github.com/DmitriiTrotskii/docker-terraform.git && cd docker-t
 2.  Изменить версии на актуальные / удалить не нужные провайдеры
 
 ```Dockerfile
-ARG TF_VERSION=1.2.3
+ARG TF_VERSION=1.2.4
 ARG TF_VSPHERE_VER=2.2.0
 ARG TF_GITHUB_VER=4.26.1
 ARG TF_GITLAB_VER=3.15.1
