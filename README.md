@@ -42,7 +42,7 @@ Could not retrieve the list of available versions for provider integrations/gith
 git clone https://github.com/DmitriiTrotskii/docker-terraform.git && cd docker-terraform
 ```
 
-2.  Изменить версии на актуальные / удалить не ныжные провайдеры
+2.  Изменить версии на актуальные / удалить не нужные провайдеры
 
 ```Dockerfile
 ARG TF_VERSION=1.2.3
@@ -73,10 +73,10 @@ COPY --from=builder /tmp/bin/${TF_RANDOM}_${TF_RANDOM_VER} ${TF_PLUGINS_DIR}/has
 3. Собрать образ
 
 ```shell
-docker buil . -t container_name
+docker build . -t container_name
 ```
 
-## Пути для провайдеров провайдерами
+## Пути для провайдеров
 
 ```
 terraform {
